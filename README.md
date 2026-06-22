@@ -62,7 +62,7 @@ to enable **Predictive Governance** instead of Reactive Governance.
 
 # 🏗 System Architecture
 
-```text
+
 Citizen Portal
       │
       ▼
