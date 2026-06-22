@@ -186,6 +186,8 @@ export default function CitizenReporting({ onComplaintSubmitted }: CitizenReport
 
       // Construct payload matching exact snake_case columns
       const payload: any = {
+        citizen_name: citizenName.trim() || "Anonymous Citizen",
+        location: locationName.trim() || "Unknown Location, India",
         issue_type: issueType,
         severity: Number(aiAnalysisResult.severityScore) || 50,
         description: description,
@@ -194,7 +196,12 @@ export default function CitizenReporting({ onComplaintSubmitted }: CitizenReport
         image_url: imagePreview || "https://images.unsplash.com/photo-1515162305285-0293e4767cc2?q=80&w=800",
         status: "PENDING",
         risk_score: Number(aiAnalysisResult.riskScore) || 50,
-        department: getDepartmentForIssue(issueType)
+        department: getDepartmentForIssue(issueType),
+        failure_mode: aiAnalysisResult.failureMode || "General structural fatigue",
+        remedial_action: aiAnalysisResult.remedialAction || "Inspection scheduled.",
+        dangers: Array.isArray(aiAnalysisResult.dangers) ? aiAnalysisResult.dangers : [],
+        highlight_regions: Array.isArray(aiAnalysisResult.highlightRegions) ? aiAnalysisResult.highlightRegions : [],
+        priority: aiAnalysisResult.priority || "Medium"
       };
 
       setSubmissionStep("saving");

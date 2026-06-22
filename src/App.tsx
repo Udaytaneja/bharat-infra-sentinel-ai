@@ -130,6 +130,8 @@ export default function App() {
         // If table is empty, attempt to seed with default mock complaints so it has high-fidelity data
         console.log("[DATABASE FETCH] Supabase complaints table returned empty results. Seeding default complaints...");
         const seedRows = INITIAL_COMPLAINTS.map(c => ({
+          citizen_name: c.citizenName,
+          location: c.location,
           issue_type: c.issueType,
           severity: c.severityScore,
           description: c.description,
@@ -138,7 +140,12 @@ export default function App() {
           image_url: c.imageUrl,
           status: c.status,
           risk_score: c.riskScore,
-          department: getDepartmentForIssue(c.issueType)
+          department: c.department || getDepartmentForIssue(c.issueType),
+          failure_mode: c.failureMode || "General structural fatigue",
+          remedial_action: c.remedialAction || "Inspection scheduled.",
+          dangers: c.dangers || [],
+          highlight_regions: c.highlightRegions || [],
+          priority: c.priority || "Medium"
         }));
 
         const { error: seedErr } = await supabase.from("complaints").insert(seedRows);

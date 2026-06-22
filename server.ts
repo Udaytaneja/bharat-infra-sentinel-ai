@@ -8,7 +8,7 @@ dotenv.config();
 
 // Initialize Express app
 const app = express();
-const PORT = 3000;
+const PORT = process.env.PORT ? Number(process.env.PORT) : 3000;
 
 // Middleware for parsing JSON with generous payload limits for base64 images
 app.use(express.json({ limit: "15mb" }));
