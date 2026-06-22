@@ -10,9 +10,9 @@
 [![Node.js](https://img.shields.io/badge/Node.js-Backend-green?style=for-the-badge\&logo=node.js)](https://nodejs.org/)
 [![Supabase](https://img.shields.io/badge/Supabase-Database-green?style=for-the-badge\&logo=supabase)](https://supabase.com/)
 
-## 🌍 Live Application
+##  Live Application
 
-🚀 **Deployed Prototype**
+ **Deployed Prototype**
 
 **Live Demo:**
 [Bharat Infra Sentinel AI Live Platform](https://bharat-infra-sentinel-ai.onrender.com/?utm_source=chatgpt.com)
@@ -60,7 +60,7 @@ The platform combines:
 
 to enable **Predictive Governance** instead of Reactive Governance.
 
-# 🏗 System Architecture
+#  System Architecture
 
 
 Citizen Portal
@@ -86,7 +86,7 @@ National Command Center
 Government Decision Support
 
 
-# 🚀 Key Features
+#  Key Features
 
 ## 1️⃣ Executive Summary
 
@@ -201,7 +201,7 @@ Administrative controls for:
 
 ---
 
-# 🤖 Artificial Intelligence Capabilities
+#  Artificial Intelligence Capabilities
 
 ### Incident Classification
 
@@ -236,7 +236,7 @@ Uses historical incident patterns to:
 
 ---
 
-# 📊 Technology Stack
+#  Technology Stack
 
 ## Frontend
 
@@ -368,7 +368,7 @@ npm install
 npm run dev
 ```
 
-# 🔐 Environment Variables
+#  Environment Variables
 
 Create a `.env` file:
 
@@ -380,7 +380,7 @@ VITE_SUPABASE_URL=YOUR_SUPABASE_URL
 VITE_SUPABASE_ANON_KEY=YOUR_SUPABASE_ANON_KEY
 ```
 
-🧠 AI Decision-Making Workflow
+ AI Decision-Making Workflow
 
 When a complaint is submitted, the AI engine performs:
 
@@ -471,10 +471,6 @@ AI-generated maintenance workflows.
 # 🏆 Vision
 
 > “Transforming India's infrastructure governance from reactive maintenance to predictive intelligence through Artificial Intelligence, citizen participation, and data-driven decision making.”
-
----
-
-⭐ If you found this project valuable, consider giving the repository a star and supporting the vision of smarter, AI-driven public infrastructure governance.
 
 
 
