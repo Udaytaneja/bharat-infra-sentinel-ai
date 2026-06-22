@@ -1,0 +1,6 @@
+{
+  "name": "Bharat Infra Sentinel AI",
+  "description": "AI-powered Smart City and Predictive Infrastructure Governance platform predicting infrastructure failures and managing complaints.",
+  "requestFramePermissions": ["geolocation"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
